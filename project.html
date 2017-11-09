@@ -1,0 +1,143 @@
+<html>
+    <head>
+        <title>Fowler's Sporting Good</title>
+        <style>
+            img{
+                width:400px;
+            }
+            input{
+                width:20px;
+                font-size: 20px;
+            }
+            body{
+                background-color : greenyellow
+            }
+            body{
+                font-size: 40
+            }
+            button{
+                font-size: 30
+            }
+            body{
+                font-style: oblique
+            }
+        </style>    
+        <script>
+            function bill(){
+                var r1 = 9.99;
+                var r2 = 79.99;
+                var r3 = 59.99;
+                var r4 = 29.99;
+                var r5 = 119.99;
+                var w1 = 5.99;
+                var w2 = 49.99;
+                var w3 = 59.99;
+                var w4 = 19.99;
+                var w5 = 99.99;
+    var quantity1 =document.getElementById("q1")
+    var quantity2 =document.getElementById("q2")
+    var quantity3 =document.getElementById("q3")
+    var quantity4 =document.getElementById("q4")
+    var quantity5 =document.getElementById("q5")
+    var output = document.getElementById("output") 
+    var tax = parseFloat (subtotal.value) * 0.0875; 
+    var total = parseFloat (subtotal.value) + tax;
+    var build = "";
+    build += "Subtotal: " + subtotal.value + "<br>"
+    build += "Tax: " + tax.toFixed(2) + "<br>"
+    build += "---------------<br>"; 
+    build += "Total: " + total;
+
+    if(price>200){
+                build += " Shipping price is free";
+                }else if(price >=100  && price <= 199){
+                build += " Shipping price is $10";
+                }else if(price > 100){
+                build += " Shipping price is $20";
+    } 
+
+    output.innerHTML = build;
+        </script>
+        </head>
+        <body>
+            <div>
+                <h1>Mouthpiece</h1>
+                <img src="mouthpiece.png"><br>
+                <span>
+                    $5.99 + tax with shipping&handling 
+                </span>
+                <p>
+                    Awesome in game mouthpiece!<br>
+                    Gets oxyegn in and out of your body with ease!<br>
+                    That's not all, there are many different varieties to match your team color!<br>
+                </p>
+                Quantity: <input type="text" id="q5"><br>
+                <button onclick="bill()">
+                    add to cart 
+                </button>
+                <div id="output"></div>
+                <h1>Helmet</h1>
+                <img src="helmet.png"><br>
+                <span>
+                    $69.99 + tax with shipping&handling
+                </span>
+                <p>
+                    Awesome in game helmet!<br>
+                    If you happen to go head to head with someone you won't feel a thing at all!<br>
+                    That's not all, there are many different varieties to match your team color!<br>
+                </p>
+                Quantity: <input type="text" id="q1"><br>
+                <button onclick="bill()">
+                    add to cart 
+                </button>
+                <div id="output"></div>
+                <h1>Cleats</h1>
+                <img src="cleats.png"><br>
+                <span>
+                    $49.99 + tax 
+                </span>
+                <p>
+                    Awesome cleats!<br>
+                    They are light on your feet so you can pull off more elusive moves and gain a lot of speed!<br>
+                    That's not all, there are many different varieties to match your team color!<br>
+                </p>
+                Quantity: <input type="text" id="q2"><br>
+                <button onclick="bill()">
+                    total price for that product 
+                </button>
+                <div id="output"></div>
+                <h1>Football pants</h1>
+                <img src="pants.png"><br>
+                <span>
+                    $19.99 + tax with shipping&handling
+                </span>
+                <p>
+                    Awesome pants!<br>
+                    The padding in the pants allows you to feel no pain when you get hit in the theighs or knees!<br>
+                    That's not all, there are many different varieties to match your team color!<br>
+                </p>
+                Quantity: <input type="text" id="q3"><br>
+                   <button onclick="bill()">
+                    add to cart
+                </button>
+                <div id="output"></div>
+                 <h1>Shoulderpads</h1>
+                <img src="shoulderpads.png"><br>
+                <span>
+                    $99.99 + tax with shipping&handling  
+                </span>
+                <p>
+                    Awesome pads!<br>
+                    You can make good tackles with your shoulder and you will have the defender or ball carrier feel the pain of the hit!<br>
+                    The shoulderpads only come in two colors black or white!<br>
+                    But thats not all, the shoulderpads are light on your body so its like having no extra weight on your body!<br>
+                </p>
+                Quantity: <input type="text" id="q4"><br>
+                <button onclick="bill()">
+                    add to cart 
+                </button>
+                <div id="output"></div>
+
+            </div>
+    </body>
+</html>
